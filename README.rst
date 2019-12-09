@@ -49,6 +49,22 @@ The environment assignment may differ depending on which shell you're running.
 
 3. By default, you should now have access to the API at localhost:5000. Try http://localhost:5000/*{printer IP address}*/info to see if you get any info from the printer.
 
+
+Run it in Docker
+=======================
+1. Make sure you have docker installed. Read about docker at:
+  
+  https://docs.docker.com
+
+2. run it like:
+  
+  docker-compose up
+
+3. If you have updated the project and want to rebuild run:
+
+  docker-compose up --build
+
+
 What information does the API give me?
 =======================
 
