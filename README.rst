@@ -4,6 +4,8 @@ FlashForge Finder API
 This is an unofficial interpretation of the FlashForge Finder API.
 It's served with Flask to make it as easy as possible to create your own UI.
 
+Forked from https://github.com/DanMcInerney/flashforge-finder-api
+
 Warning
 =======================
 Use at your own risk. It only does reading operations but it is unofficial and may of course have bugs etc.
@@ -87,4 +89,8 @@ It supports:
 
 Does it support other FlashForge models?
 =======================
-It's only been tested on the Finder model. Please let me know if it works on other models too.
+It's initially been tested on the Finder model. Please let me know if it works on other models too.
+
+Known to work:
+  * Finder
+  * Adventurer 3
