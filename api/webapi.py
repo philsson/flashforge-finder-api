@@ -3,6 +3,7 @@ from protocol import get_head_position
 from protocol import get_temp
 from protocol import get_progress
 from protocol import get_status
+from protocol import run_gcode
 
 from flask import Flask
 from flask import jsonify
@@ -47,3 +48,8 @@ def progress(ip_address):
 def status(ip_address):
     printer_info = get_status({'ip': ip_address, 'port': PORT})
     return jsonify(printer_info)
+
+
+@app.route("/<string:ip_address>/gcode/<string:code>")
+def gcode(ip_address, code):
+    return run_gcode({'ip': ip_address, 'port': PORT}, code)
